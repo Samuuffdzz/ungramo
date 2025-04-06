@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Anagramas
+    </title>
+    <style>
+        input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body style="background-color: aquamarine;">
+    <h1>
+        Funny Games 
+    </h1>
+
+    <p>El funcionamiento de este juego es simple: aparecen por lotes letras desordenadas y, a partir de ellas, debes reorganizarlas para formar una palabra de una temática propuesta. Dicho de otro modo, por si hay quien tiene deficit lector, se te facilitan distintos anagramas y tú debes desencriptar la palabra de origen. Las mentes audaces podrían objetar que la respuesta puede no ser inequívoca, pero son sutilezas menores.</p>
+
+    <h2>
+        Play
+    </h2>
+
+    <p>Cuando presione el botón de 'Iniciar' aparecerá una palabra referenciando a la temática y, a su vez, una tabla con los distintos anagramas a desenmarañar. ¡Mucha mierda!</p>
+
+    <!--
+    <button onclick="saludar()">Iniciar</button>
+
+    <script>
+    function saludar() {
+        alert("¡Hola, usuario!");
+    }
+    </script>
+
+    <button onclick="pedirNombre()">Pedir nombre</button>
+    <p id="saludo"></p>
+
+    <script>
+        function pedirNombre() {
+            let nombre = prompt("¿Cómo te llamas?");
+            document.getElementById("saludo").innerText = "Hola, " + nombre + "!";
+        }
+    </script>
+
+    <form onsubmit="mostrar(event)">
+        Tu edad: <input type="number" id="edad">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <p id="respuesta"></p>
+
+    <script>
+        function mostrar(e) {
+            e.preventDefault();
+            let edad = document.getElementById("edad").value;
+            document.getElementById("respuesta").innerText = "Tienes " + edad + " años.";
+        }
+    </script>
+    -->
+
+    <button style="align-self: center;" onclick="initializeTable()">Iniciar</button>
+
+    <hr>
+
+    <table style="background-color: rgb(152, 98, 202);" border="1">
+    <tr style="background-color: rgb(255, 81, 81);">
+        <th>Temática</th>
+        <th>bar</th>
+    </tr>
+    <tr style="background-color: rgb(114, 147, 255);">
+        <th>Anagrama</th>
+        <th>Origen</th>
+    </tr>
+    <tr style="background-color: rgb(170, 190, 255);">
+        <td><a id="anag00">foo</a></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr style="background-color: rgb(170, 190, 255);">
+        <td><a id="anag01">foo</a></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr style="background-color: rgb(170, 190, 255);">
+        <td><a id="anag02">foo</a></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr style="background-color: rgb(170, 190, 255);">
+        <td><a id="anag03">foo</a></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr style="background-color: rgb(170, 190, 255);">
+        <td><a id="anag04">foo</a></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr style="background-color: rgb(170, 190, 255);">
+        <td><a id="anag05">foo</a></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr style="background-color: rgb(170, 190, 255);">
+        <td><a id="anag06">foo</a></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr style="background-color: rgb(170, 190, 255);">
+        <td><a id="anag07">foo</a></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr style="background-color: rgb(170, 190, 255);">
+        <td><a id="anag08">foo</a></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr style="background-color: rgb(170, 190, 255);">
+        <td><a id="anag09">foo</a></td>
+        <td><input type="text"></td>
+    </tr>
+  </table>
+</body>
+</html>
