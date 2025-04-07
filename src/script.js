@@ -52,7 +52,14 @@ function swapChars(str, i, j) {
 function initializeTable() {
     let t = randomNumber(0, n);
     let pals = dicts[t].split(' ');
+    let m = pals.length;
     document.getElementById('tem').innerText = themes[t];
+
+    for (let i = 0; i < m; ++i) {
+        let l = randomNumber(0, m);
+        let r = randomNumber(0, m);
+        if (l != r) [pals[l], pals[r]] = [pals[r], pals[l]];
+    }
 
     for (let i = 0; i < N; ++i) {
         let len = pals[i].length;
