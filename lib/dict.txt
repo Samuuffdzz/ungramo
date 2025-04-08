@@ -1,2 +1,3 @@
-rafael,claudia,clara,alicia,antonio,paula,adrian,marina,aisha,nazaret,margarita
+rafael,claudia,clara,alicia,antonio,paula,adrian,marina,aisha,nazaret,margarita,olga,natividad
 tirana,andorra la vieja,viena,minsk,bruselas,sarajevo,sofia,zagreb,nicosia,praga,copenhague,tallin,helsinki,paris,tiflis,berlin,atenas,budapest,reikiavik,dublin,roma,pristina,riga,vaduz,vilna,luxemburgo,skopie,valleta,chisinau,monaco,podgorica,amsterdam,oslo,varsovia,lisboa,londres,bucarest,san marino,moscu,belgrado,bratislava,liubliana,madrid,estocolmo,berna,ankara,kiev,ciudad del vaticano
+flauto,saxofon,xilofono,guitarra,gaita,piano,laud,clarinete,trombon,trompa,trompeta,triangulo,arpa,acordeon,fagot,tuba

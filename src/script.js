@@ -3,6 +3,7 @@ console.log("This is script.js");
 const N = 10; // Provisional
 let txt1 = null;
 let txt2 = null;
+let select = document.getElementById('opciones');
 let themes;
 let dicts;
 let n = 0;
@@ -33,6 +34,12 @@ function loadData() {
     themes = txt1.split('\n');
     dicts = txt2.split('\n');
     n = themes.length;
+    for (let i = 0; i < n; ++i) {
+        let ele = document.createElement('option');
+        ele.value = `option${i}`;
+        ele.text = themes[i];
+        select.appendChild(ele);
+    }
 }
 
 function randomNumber(min, max) {
@@ -50,7 +57,11 @@ function swapChars(str, i, j) {
 }
 
 function initializeTable() {
-    let t = randomNumber(0, n);
+    let t = select.selectedIndex;
+
+    if (t == 0) t = randomNumber(0, n);
+    else t--;
+
     let pals = dicts[t].split(',');
     let m = pals.length;
     document.getElementById('tem').innerText = themes[t];
