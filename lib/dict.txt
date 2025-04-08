@@ -1,2 +1,2 @@
-rafael claudia clara alicia antonio paula adrian francisco victor daniel
-tirana madrid lisboa berna luxemburgo bratislava varsovia riga tallin roma
+rafael,claudia,clara,alicia,antonio,paula,adrian,marina,aisha,nazaret,margarita
+tirana,andorra la vieja,viena,minsk,bruselas,sarajevo,sofia,zagreb,nicosia,praga,copenhague,tallin,helsinki,paris,tiflis,berlin,atenas,budapest,reikiavik,dublin,roma,pristina,riga,vaduz,vilna,luxemburgo,skopie,valleta,chisinau,monaco,podgorica,amsterdam,oslo,varsovia,lisboa,londres,bucarest,san marino,moscu,belgrado,bratislava,liubliana,madrid,estocolmo,berna,ankara,kiev,ciudad del vaticano

@@ -51,7 +51,7 @@ function swapChars(str, i, j) {
 
 function initializeTable() {
     let t = randomNumber(0, n);
-    let pals = dicts[t].split(' ');
+    let pals = dicts[t].split(',');
     let m = pals.length;
     document.getElementById('tem').innerText = themes[t];
 
