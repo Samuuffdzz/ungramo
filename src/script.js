@@ -7,6 +7,14 @@ let select = document.getElementById('opciones');
 let themes;
 let dicts;
 let n = 0;
+let cppals;
+
+let rows = [];
+let inputs = new Array(N);
+for (let i = 0; i < N; ++i) {
+    rows[i] = false;
+    inputs[i] = document.getElementById('res' + i);
+}
 
 document.getElementById('themes').addEventListener('change', function(e) {
     const archivo = e.target.files[0];
@@ -63,13 +71,17 @@ function initializeTable() {
     else t--;
 
     let pals = dicts[t].split(',');
+    cppals = dicts[t].split(',');
     let m = pals.length;
     document.getElementById('tem').innerText = themes[t];
 
     for (let i = 0; i < m; ++i) {
         let l = randomNumber(0, m);
         let r = randomNumber(0, m);
-        if (l != r) [pals[l], pals[r]] = [pals[r], pals[l]];
+        if (l != r) {
+            [pals[l], pals[r]] = [pals[r], pals[l]];
+            [cppals[l], cppals[r]] = [cppals[r], cppals[l]];
+        }
     }
 
     for (let i = 0; i < N; ++i) {
@@ -80,5 +92,47 @@ function initializeTable() {
             pals[i] = swapChars(pals[i], l, r);
         }
         document.getElementById('anag' + i).innerText = pals[i];
+        document.getElementById('row' + i).style = "background-color: rgb(170, 190, 255);";
+        inputs[i].value = '';
+        rows[i] = false;
     }
+}
+
+function recipAnagrams(s, t) { // Se asumen caracteres socialistas del alfabeto Latin
+    let p = [];
+    let q = [];
+    for (let i = 0; i < 26; ++i) {
+        p[i] = 0;
+        q[i] = 0;
+    }
+    for (let i = 0; i < s.length; ++i) {
+        p[s.charAt(i).charCodeAt(0) - 97]++;
+    }
+    for (let i = 0; i < t.length; ++i) {
+        q[t.charAt(i).charCodeAt(0) - 97]++;
+    }
+    for (let i = 0; i < 26; ++i) if (p[i] != q[i]) return false;
+    return true;
+}
+
+for (let i = 0; i < N; ++i) {
+    inputs[i].addEventListener('keydown', function(e) {
+        if (e.key == 'Enter') {
+            // console.log('Se presionó Enter. Valor actual: ' + inputs[i].value);
+            let str = inputs[i].value;
+            let idx = parseInt(inputs[i].id.substring(3));
+            if (cppals[idx] == str) {
+                document.getElementById('row' + idx).style = "background-color: rgb(51, 255, 0);";
+                rows[idx] = true;
+                let allTrue = true;
+                for (let i = 0; i < N; ++i) {
+                    if (rows[i] == false) {
+                        allTrue = false;
+                        break;
+                    }
+                }
+                if (allTrue) console.log('Well Done');
+            }
+        }
+    });
 }

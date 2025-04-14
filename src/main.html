@@ -14,18 +14,18 @@
     </style>
     <script src="script.js" defer></script>
 </head>
-<body style="background-color: aquamarine;">
+<body style="background-color: rgb(127, 255, 212);">
     <h1>
         Funny Games 
     </h1>
 
-    <p>El funcionamiento de este juego es simple: aparecen por lotes letras desordenadas y, a partir de ellas, debes reorganizarlas para formar una palabra de una temática propuesta. Dicho de otro modo, por si hay quien tiene deficit lector, se te facilitan distintos anagramas y tú debes desencriptar la palabra de origen. Las mentes audaces podrían objetar que la respuesta puede no ser inequívoca, pero son sutilezas menores.</p>
+    <p>El funcionamiento de este juego es simple: aparecen por lotes letras desordenadas y, a partir de ellas, debes reorganizarlas para formar una palabra de una temática propuesta. Dicho de otro modo, por si hay quien tiene deficit lector, se te facilitan distintos anagramas y tú debes desencriptar la palabra de origen. Las mentes más audaces podrían objetar que la respuesta puede no ser inequívoca, pero son sutilezas menores.</p>
 
     <h2>
         Play
     </h2>
 
-    <p>Antes de sumergirte en esta fascinante experiencia, debes incluir los archivos de los cuales se extraerá la información. En el primer selector escoge el fichero 'themes.txt' y, en el segundo, el 'dict.txt'. Ambos archivos se encuentran en el directorio 'lib' en la raíz del proyecto. A continuación, presionas el botón 'Cargar' y ya estará todo preparado. Finalmente, cuando presiones el botón de 'Iniciar', aparecerá una palabra referenciando a la temática y, a su vez, una tabla con los distintos anagramas a desenmarañar. ¡Mucha mierda!</p>
+    <p>Antes de sumergirte en esta fascinante experiencia, debes incluir los archivos de los cuales se extraerá la información. En el primer selector escoge el fichero 'themes.txt' y, en el segundo, el 'dict.txt'. Ambos archivos se encuentran en el directorio 'lib' en la raíz del proyecto. A continuación, presionas el botón 'Cargar' y ya estará todo preparado. Finalmente, cuando presiones el botón de 'Iniciar', aparecerá una palabra referenciando a la temática y, a su vez, una tabla con los distintos anagramas a desenmarañar. Para cambiar a una partida nueva... — creo que podrás ser capaz de averiguarlo. ¡Mucha mierda!</p>
 
     <!--
     <button onclick="saludar()">Iniciar</button>
@@ -89,45 +89,45 @@
         <th>Anagrama</th>
         <th>Origen</th>
     </tr>
-    <tr style="background-color: rgb(170, 190, 255);">
+    <tr id="row0" style="background-color: rgb(170, 190, 255);">
         <td><a id="anag0">foo</a></td>
-        <td><input type="text"></td>
+        <td><input type="text" id="res0"></td>
     </tr>
-    <tr style="background-color: rgb(170, 190, 255);">
+    <tr id="row1" style="background-color: rgb(170, 190, 255);">
         <td><a id="anag1">foo</a></td>
-        <td><input type="text"></td>
+        <td><input type="text" id="res1"></td>
     </tr>
-    <tr style="background-color: rgb(170, 190, 255);">
+    <tr id="row2" style="background-color: rgb(170, 190, 255);">
         <td><a id="anag2">foo</a></td>
-        <td><input type="text"></td>
+        <td><input type="text" id="res2"></td>
     </tr>
-    <tr style="background-color: rgb(170, 190, 255);">
+    <tr id="row3" style="background-color: rgb(170, 190, 255);">
         <td><a id="anag3">foo</a></td>
-        <td><input type="text"></td>
+        <td><input type="text" id="res3"></td>
     </tr>
-    <tr style="background-color: rgb(170, 190, 255);">
+    <tr id="row4" style="background-color: rgb(170, 190, 255);">
         <td><a id="anag4">foo</a></td>
-        <td><input type="text"></td>
+        <td><input type="text" id="res4"></td>
     </tr>
-    <tr style="background-color: rgb(170, 190, 255);">
+    <tr id="row5" style="background-color: rgb(170, 190, 255);">
         <td><a id="anag5">foo</a></td>
-        <td><input type="text"></td>
+        <td><input type="text" id="res5"></td>
     </tr>
-    <tr style="background-color: rgb(170, 190, 255);">
+    <tr id="row6" style="background-color: rgb(170, 190, 255);">
         <td><a id="anag6">foo</a></td>
-        <td><input type="text"></td>
+        <td><input type="text" id="res6"></td>
     </tr>
-    <tr style="background-color: rgb(170, 190, 255);">
+    <tr id="row7" style="background-color: rgb(170, 190, 255);">
         <td><a id="anag7">foo</a></td>
-        <td><input type="text"></td>
+        <td><input type="text" id="res7"></td>
     </tr>
-    <tr style="background-color: rgb(170, 190, 255);">
+    <tr id="row8" style="background-color: rgb(170, 190, 255);">
         <td><a id="anag8">foo</a></td>
-        <td><input type="text"></td>
+        <td><input type="text" id="res8"></td>
     </tr>
-    <tr style="background-color: rgb(170, 190, 255);">
+    <tr id="row9" style="background-color: rgb(170, 190, 255);">
         <td><a id="anag9">foo</a></td>
-        <td><input type="text"></td>
+        <td><input type="text" id="res9"></td>
     </tr>
   </table>
 </body>
