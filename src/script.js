@@ -96,6 +96,8 @@ function initializeTable() {
         inputs[i].value = '';
         rows[i] = false;
     }
+
+    document.getElementById('end').style.visibility = 'hidden';
 }
 
 function recipAnagrams(s, t) { // Se asumen caracteres socialistas del alfabeto Latin
@@ -131,7 +133,10 @@ for (let i = 0; i < N; ++i) {
                         break;
                     }
                 }
-                if (allTrue) console.log('Well Done');
+                if (allTrue) {
+                    console.log('Well Done');
+                    document.getElementById('end').style.visibility = 'visible';
+                }
             }
         }
     });
